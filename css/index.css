@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/******* STRUCTURE ******/
+:root {
+    --couleur-nav: #5D7052;
+    --couleur-body: #E3CD8B;
+    --couleur-tierce: #6A645A;
+    --couleur-black: rgb(10, 10, 10);
+    --shadow:  0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+body {
+    background-color: var(--couleur-body);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 2em;
+}
+
+.container {
+    margin: auto;
+    width: 90%;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+    margin: 1em;
+}
+/******* NAVBAR ******/
+.logo {
+    width: 75px;
+    margin: 10px;
+}
+.navbar {
+    background-color: var(--couleur-nav);
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar-content { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.listeligne {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+.listeligne a:hover {
+    color: var(--couleur-body);
+}
+/*********** MAIN *******/
+.banner {
+    background-image: url(../img/ban.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100vh - 70px);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.descr {
+    width: 35%;
+    background-color: rgba(203, 196, 196, 0.6);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 5px;
+    padding: 2em;
+    box-shadow: var(--shadow);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin-right: 15%;
+}
+
+.separator {
+    border: none;
+    border-top: 3px solid rgb(41, 39, 39);
+}
+
+.descr li {
+    font-size: 1.5em;
+}
+
+.corp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.imgatelbois {
+    width: 40%;
+    
+}
+
+.corptext {
+    width: 50%;
+}
+
+/************* CARD *********/
+.card-d {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 6em;
+}
+.card {
+    margin-top: 2em;
+    width: 300px;
+    height: 600px;
+    background-color: var(--couleur-nav);
+    text-align: center;
+    overflow: hidden;
+
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 2em;
+    transition: all .4s ease-in-out;
+}
+
+.card img:hover {
+    transform: translateY(-6px);
+    overflow: hidden;
+}
+
+.card p {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.btn-card {
+    font-size: 1.5em;
+    padding: .7em;
+    background-color: var(--couleur-tierce);
+    color: var(--couleur-black);
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px 5px #000000;
+}
+
+.btn-card:hover {
+    background-color: var(--couleur-body);
+    color: var(--couleur-black);
+    transition: all .4s ease-in-out;
+
+}
+/************* PORTFOL *********/
+.profil-row {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    align-items: center;
+}
+
+.align {
+    text-align: center;
+}
+
+.profil-row img {
+    margin: 5em 0 0 0;
+    width: 80%;
+}
+
+.profil-row p {
+    margin-bottom: 2em;
+}
+
+.btn {
+    padding: .7em;
+    background-color: var(--couleur-nav);
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    font-size: 1.5em;
+}
+
+.btn:hover {
+    background-color: var(--couleur-tierce);
+    color: var(--couleur-body);
+    transition: all .4s ease-in-out;
+}
+
+.profil-2-row {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    align-items: center;
+    gap: 4em;
+}
+
+.profil-2-row p {
+    margin:2em 0;
+}
+
+.profil-2-row img {
+    width: 80%;
+    margin-top: 2em;
+}
+
+.marg {
+    margin-top: 2em;
+}
+
+.boug {
+    padding-bottom: 4em;
+}
+
+/******** FOOTER *******/
+footer {
+    background-color: var(--couleur-nav);
+    text-align: center;
+    font-size: 3em;
+}
+
+.foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    height: 150px;
+}
+
+.foot p,
+.link a {
+    font-size: .6em;
+}
+
+.icon a {
+    font-size: 50px;
+    padding-right: 1em;
+}

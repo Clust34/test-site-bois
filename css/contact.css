@@ -1,0 +1,60 @@
+/******* LIEUX ******/
+.situ h1 {
+    text-align: center;
+    margin:3em 0;
+}
+
+.maps {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.maps iframe {
+    width: 40%;
+}
+
+.maps-situ {
+    width: 40%;
+}
+
+.img-logo {
+    width: 80px;
+}
+
+.face {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+}
+.face i {
+    font-size: 60px;
+}
+/************ FORMULAIRE *************/
+h2 {
+    margin: 2em;
+    text-align: center;
+    font-size: 2em;
+}
+.form-row {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.form-wid-1 {
+    width: 45%;
+}
+
+.form-wid-2 {
+    width: 45%;
+}
+
+.form-col,
+.form-wid-2 {
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: 15% 80%;
+    gap: 1em 1em;
+    margin-bottom: 3em;
+}
