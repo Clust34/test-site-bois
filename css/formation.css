@@ -1,0 +1,24 @@
+h1 {
+    text-align: center;
+    margin: 2em;
+}
+.card-stage {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 2em;
+}
+.card-text {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   width: 60%;
+}
+.btn-card {
+    width: 180px;
+    margin: auto;
+}
+.card-stage-img {
+    width: 30%;
+    margin-right: 4em;
+}

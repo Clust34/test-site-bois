@@ -1,0 +1,11 @@
+.port-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 2em;
+    margin: 2em;
+}
+.port-row img{
+    
+    max-height: 500px;
+}
